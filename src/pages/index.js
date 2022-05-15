@@ -5,8 +5,9 @@ import Icon from '/src/images/icon.png'
 const IndexPage = () => {
   return (
     <main>
-      <StaticImage src='/src/images/icon.png' alt='' />
-      <img src={Icon} alt='' />
+      <StaticImage src='/src/images/icon.png' alt='' /> {/* FAILS */}
+      <StaticImage src='../images/icon.png' alt='' /> {/* WORKS */}
+      <img src={Icon} alt='' /> {/* WORKS */}
     </main>
   )
 }
